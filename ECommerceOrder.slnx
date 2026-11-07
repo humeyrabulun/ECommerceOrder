@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ECommerceBusiness/ECommerceBusiness.csproj" Id="59f1ba84-b711-4e2c-96ef-93fe3a0a6a74" />
+  <Project Path="ECommerceOrder.Core/ECommerceOrder.Core.csproj" Id="d1d187b5-13b9-4ee1-8539-87496208d344" />
+  <Project Path="ECommerceOrder.Data/ECommerceOrder.Data.csproj" Id="437f8a83-7d55-4ace-b48e-79b433373e29" />
+  <Project Path="ECommerceOrderApi/ECommerceOrder.API.csproj" />
+</Solution>
