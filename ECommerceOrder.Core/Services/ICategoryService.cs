@@ -8,11 +8,18 @@ namespace ECommerceOrder.Core.Services
 {
     public interface ICategoryService
     {
-        Task<List<CategoryListDto>> GetAllAsync();
-        Task<CategoryListDto> GetByIdAsync(int id);
-        Task AddAsync(CategoryCreateDto categoryDto);
-        Task UpdateAsync(CategoryUpdateDto categoryDto);
-        Task DeleteAsync(int id);
-        Task <List<ProductWithReviewDto>> GetProductsWithMinRatingAsync(int id,int minRating);
+        Task<Result<List<CategoryListDto>>> GetAllAsync();
+
+        Task<Result<CategoryListDto>> GetByIdAsync(int id);
+
+        Task<Result<CategoryCreateDto>> AddAsync(CategoryCreateDto categoryDto);
+
+        Task<Result<CategoryUpdateDto>> UpdateAsync(CategoryUpdateDto categoryDto);
+
+        Task<Result<string>> DeleteAsync(int id);
+
+        Task<Result<List<ProductWithReviewDto>>> GetProductsWithMinRatingAsync(int categoryId, int minRating);
+
+
     }
 }
